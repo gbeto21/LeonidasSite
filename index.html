@@ -163,7 +163,10 @@ pero cuando son demasiados elementos, no se respeta el ancho que se les
 asignó, se rompe el modelo de caja.
 
 flex-direction: column -> cada elemento ocupa toda la fila, muestra
-los elementos en forma vertical.
+los elementos en forma vertical. Si se cambia el elemento a ésta propiedad,
+las propiedades: 'Justify-content' y 'Align-items' van a cambiar de
+sentido tambien, porque es como si se estuviera girando el contenedor
+cuando se le aplica ésta propiedad.
 
 flex-shrinck: 0 -> Indica cuanto un elemento puede encojerse.
 
@@ -186,8 +189,11 @@ márgenes al final y al inicio del contenedor
 justify-content: space-around -> genera un espacido igual entre
 los hijos del contenedor. -->
 
+<!-- Alinear elementos de forma vertical
+align-items: center -> Alinea los elementos de forma vertical.
 
-
+align-self: flex-star -> El elemento especificado se alinea 
+a dónde se esté especificando -->
 
 <!-- Clase:
 Tipos de display: 00:00. -->
