@@ -94,3 +94,14 @@ h1 strong{
     text-decoration: none;
     
 }
+
+.flexbox{
+    display:flex;
+    flex-direction: row;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+}
