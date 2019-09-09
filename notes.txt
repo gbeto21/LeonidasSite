@@ -53,3 +53,20 @@ align-items: center -> Alinea los elementos de forma vertical.
 
 align-self: flex-star -> El elemento especificado se alinea 
 a dónde se esté especificando -->
+
+Unidades de medida:
+porcentaje: Longitud referente al tamaño de los elementos padre.
+
+em: uniad relativa al tamaño de fuente
+especificada más cercano. Si tengo un tamaño de fuente
+situado en el propi elemento, si se utiliza para una propiedad
+como heigh, width, padding, margin u otra cosa que sea para no
+establecer una fuente, se toma el elemento de fuente.
+
+rem: Unidad relativa al tamaño de fuente especificadaen el
+ancestro más lejano (html o body)
+
+vw / vh: unidad relativa porcentual con respecto al Viewport
+
+Se puede obtener un media query desde la etiqueta link:
+<link rel=stylesheet" href"css/media.css" media="screen and (max-width:768px)"/>
