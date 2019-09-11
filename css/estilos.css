@@ -402,12 +402,26 @@ figure{
     .project-description{
         font-size: .8em;
     }
+
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px){
     .project-details{
         width:auto;
         font-size: 12px;
+    }
+    .event-detail{
+        margin: -2em .5em .5em;
+        padding: 1em;
     }
 }
 

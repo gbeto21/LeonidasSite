@@ -70,3 +70,6 @@ vw / vh: unidad relativa porcentual con respecto al Viewport
 
 Se puede obtener un media query desde la etiqueta link:
 <link rel=stylesheet" href"css/media.css" media="screen and (max-width:768px)"/>
+
+flex-shrinck: sirver para que el elemento no haga ningún
+tipo de re-size.
