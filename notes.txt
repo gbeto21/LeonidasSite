@@ -73,3 +73,33 @@ Se puede obtener un media query desde la etiqueta link:
 
 flex-shrinck: sirver para que el elemento no haga ningún
 tipo de re-size.
+
+margin: 0 auto; --> centra la etiqueta.
+
+margin: 1em auto; --> centra la etiqueta y le agrega un padding.
+
+se genera el Margin Colapsin: una nueva forma de solucionarlo
+es poniendo un borde de color transparente a uno de los 
+elementos.
+
+editor de código online: codepen.
+
+tipos de posiciones:
+    static
+    relative
+    absolute
+    fixed
+    sticky
+
+Cuando se establece la propiedad: position, en un valor
+que no sea static, se desbloquean las propiedades: 
+"z-index" y "top right botton left"
+
+cuando se le pone la posición styky, es necesario indicar
+con respecto a quien se va a pegar. Ej:
+    .sticky{
+        position: sticky;
+        top: 0;
+    }
+
+
