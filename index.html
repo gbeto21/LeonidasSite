@@ -12,7 +12,7 @@
 
 <body>
 
-    <i class="icon-menu burger-buttom"></i>
+    <i class="icon-menu burger-buttom" id="burguer-menu"></i>
 
     <header class="header">
 
@@ -129,7 +129,8 @@
             <article class="event">
                 <figure class="event-imageContainer">
                     <div class="flexible-video">
-                        <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0"
+                        <iframe class="youtube-video" width="560" height="315"
+                            src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -222,9 +223,28 @@
 
     </footer>
 
+    <script>
+        console.log('Hola.')
+        console.log(document.querySelector('.menu'));
+
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burguer-menu');
+
+
+        burgerButton.addEventListener('click', hideShow)
+
+        function hideShow() {
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            }else {
+                menu.classList.add('is-active');
+            }
+        }
+    </script>
+
 </body>
 
 </html>
 
 <!-- Continuar en:
-Fuentes de íconos: 04:51 -->
+: : -->
