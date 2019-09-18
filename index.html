@@ -224,19 +224,31 @@
     </footer>
 
     <script>
-        console.log('Hola.')
-        console.log(document.querySelector('.menu'));
+        // console.log('Hola.')
+        // debugger
+        const ipad = window.matchMedia('screen and (max-width: 767px)')
+        // console.log(document.querySelector('.menu'));
 
         const menu = document.querySelector('.menu');
         const burgerButton = document.querySelector('#burguer-menu');
+        // debugger
+        ipad.addListener(validation)
 
-
-        burgerButton.addEventListener('click', hideShow)
+        function validation(event) {
+            // debugger
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow)
+            }
+            else {
+                burgerButton.removeEventListener('click', hideShow)
+            }
+        }
 
         function hideShow() {
+            // debugger
             if (menu.classList.contains('is-active')) {
                 menu.classList.remove('is-active');
-            }else {
+            } else {
                 menu.classList.add('is-active');
             }
         }
